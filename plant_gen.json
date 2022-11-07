@@ -57,111 +57,143 @@
       }
     ]
   },
-  "active_components": [
-    {
-      "name": {
-        "type": "RandomChoice",
-        "choices": [
-          "Root",
-          "Stalk, Trunk",
-          "Leaf, Thorn",
-          "Fruit, flower"
+  "active_components": {
+    "number":  3,
+    "name": {
+      "type": "RandomChoice",
+      "choices": [
+        "Root",
+        "Stalk, Trunk",
+        "Leaf, Thorn",
+        "Fruit, flower"
+      ]
+    },
+    "property": {
+      "type": {
+        "type": "RandomRollwithChoice",
+        "sides": 100,
+        "results": [
+          {
+            "min_max": [
+              1,
+              30
+            ],
+            "value": {
+              "type": "RandomChoice",
+              "choices": [
+                "Mental",
+                "Life",
+                "Disease",
+                "Wound",
+                "Status",
+                "Death"
+              ]
+            }
+          },
+          {
+            "min_max": [
+              31,
+              60
+            ],
+            "value": {
+              "type": "RandomChoice",
+              "choices": [
+                "Mental",
+                "Life",
+                "Disease",
+                "Wound",
+                "Status",
+                "Death"
+              ]
+            }
+          },
+          {
+            "min_max": [
+              61,
+              100
+            ],
+            "value": {
+              "type": "RandomChoice",
+              "choices": [
+                "Fragrant",
+                "Culinary",
+                "Crafting",
+                "Artistic",
+                "Enhancing",
+                "Exotic"
+              ]
+            }
+          }
         ]
       },
-      "property": {
-        "type": {
-          "type": "RandomRollwithChoice",
-          "sides": 100,
-          "results": [
-            {
-              "min_max": [
-                1,
-                30
-              ],
-              "value": {
-                "type": "RandomChoice",
-                "choices": [
-                  "Mental",
-                  "Life",
-                  "Disease",
-                  "Wound",
-                  "Status",
-                  "Death"
-                ]
-              }
-            },
-            {
-              "min_max": [
-                31,
-                60
-              ],
-              "value": {
-                "type": "RandomChoice",
-                "choices": [
-                  "Mental",
-                  "Life",
-                  "Disease",
-                  "Wound",
-                  "Status",
-                  "Death"
-                ]
-              }
-            },
-            {
-              "min_max": [
-                61,
-                100
-              ],
-              "value": {
-                "type": "RandomChoice",
-                "choices": [
-                  "Fragrant",
-                  "Culinary",
-                  "Crafting",
-                  "Artistic",
-                  "Enhancing",
-                  "Exotic"
-                ]
-              }
-            }
-          ]
+      "potency": {
+        "type": "RandomRoll",
+        "sides": 100,
+        "results": [
+          {
+            "min_max": [
+              1,
+              40
+            ],
+            "value": "Mild"
+          },
+          {
+            "min_max": [
+              41,
+              75
+            ],
+            "value": "Moderate"
+          },
+          {
+            "min_max": [
+              76,
+              90
+            ],
+            "value": "Severe"
+          },
+          {
+            "min_max": [
+              91,
+              100
+            ],
+            "value": "Extreme"
+          }
+        ]
+      }
+    },
+    "quality": {
+      "type": "RandomRoll",
+      "sides": 100,
+      "results": [
+        {
+          "min_max": [
+            1,
+            40
+          ],
+          "value": "Low"
         },
-        "potency": {
-          "type": "RandomRoll",
-          "sides": 100,
-          "results": [
-            {
-              "min_max": [
-                1,
-                40
-              ],
-              "value": "Mild"
-            },
-            {
-              "min_max": [
-                41,
-                75
-              ],
-              "value": "Moderate"
-            },
-            {
-              "min_max": [
-                76,
-                90
-              ],
-              "value": "Severe"
-            },
-            {
-              "min_max": [
-                91,
-                100
-              ],
-              "value": "Extreme"
-            }
-          ]
+        {
+          "min_max": [
+            41,
+            75
+          ],
+          "value": "Average"
+        },
+        {
+          "min_max": [
+            76,
+            90
+          ],
+          "value": "Superior"
+        },
+        {
+          "min_max": [
+            91,
+            100
+          ],
+          "value": "Epic"
         }
-      },
-      "quality": []
+      ]
     }
-  ]
+  }
 }

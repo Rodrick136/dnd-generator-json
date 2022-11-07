@@ -10,7 +10,7 @@
           40
         ],
         "value": {
-          "type": "choice",
+          "type": "RandomChoice",
           "choices": [
             "Grass",
             "Root",

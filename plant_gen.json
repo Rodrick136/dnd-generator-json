@@ -5,25 +5,25 @@
     "sides": 100,
     "results": [
       {
-        "result": [1, 40],
+        "min_max": [1, 40],
         "value": {
           "type": "choice",
           "choices": ["Grass", "Root", "Mushroom", "Tuber"]
         }
       },
       {
-        "result": [41, 70],
+        "min_max": [41, 70],
         "value": {
           "type": "choice",
           "choices": ["Vine", "Shrub", "Flower"]
         }
       },
       {
-        "result": [71, 90],
+        "min_max": [71, 90],
         "value": "Tree"
       },
       {
-        "result": [91, 100],
+        "min_max": [91, 100],
         "value": {
           "type": "choice",
           "choices": ["Carnivore", "Sapient", "Herbivore", "Omnivore"]

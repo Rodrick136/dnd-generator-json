@@ -1,7 +1,7 @@
 {
   "type": "plant",
   "name": {
-    "type": "RandomRollwithChoice",
+    "type": "RandomRoll",
     "sides": 100,
     "results": [
       {
@@ -25,7 +25,7 @@
           70
         ],
         "value": {
-          "type": "choice",
+          "type": "RandomChoice",
           "choices": [
             "Vine",
             "Shrub",
@@ -46,7 +46,7 @@
           100
         ],
         "value": {
-          "type": "choice",
+          "type": "RandomChoice",
           "choices": [
             "Carnivore",
             "Sapient",
@@ -57,7 +57,7 @@
       }
     ]
   },
-  "active_components": {
+  "components": {
     "number": 3,
     "name": {
       "type": "RandomChoice",
@@ -70,7 +70,7 @@
     },
     "property": {
       "type": {
-        "type": "RandomRollwithChoice",
+        "type": "RandomRoll",
         "sides": 100,
         "results": [
           {

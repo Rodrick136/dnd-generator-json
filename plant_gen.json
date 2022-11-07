@@ -58,7 +58,7 @@
     ]
   },
   "active_components": {
-    "number":  3,
+    "number": 3,
     "name": {
       "type": "RandomChoice",
       "choices": [
@@ -81,12 +81,12 @@
             "value": {
               "type": "RandomChoice",
               "choices": [
-                "Mental",
-                "Life",
-                "Disease",
-                "Wound",
-                "Status",
-                "Death"
+                "Harmful, Mental",
+                "Harmful, Life",
+                "Harmful, Disease",
+                "Harmful, Wound",
+                "Harmful, Status",
+                "Harmful, Death"
               ]
             }
           },
@@ -98,12 +98,12 @@
             "value": {
               "type": "RandomChoice",
               "choices": [
-                "Mental",
-                "Life",
-                "Disease",
-                "Wound",
-                "Status",
-                "Death"
+                "Medicinal, Mental",
+                "Medicinal, Life",
+                "Medicinal, Disease",
+                "Medicinal, Wound",
+                "Medicinal, Status",
+                "Medicinal, Death"
               ]
             }
           },
@@ -115,12 +115,12 @@
             "value": {
               "type": "RandomChoice",
               "choices": [
-                "Fragrant",
-                "Culinary",
-                "Crafting",
-                "Artistic",
-                "Enhancing",
-                "Exotic"
+                "Utility, Fragrant",
+                "Utility, Culinary",
+                "Utility, Crafting",
+                "Utility, Artistic",
+                "Utility, Enhancing",
+                "Utility, Exotic"
               ]
             }
           }

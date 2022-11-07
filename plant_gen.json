@@ -5,39 +5,160 @@
     "sides": 100,
     "results": [
       {
-        "min_max": [1, 40],
+        "min_max": [
+          1,
+          40
+        ],
         "value": {
           "type": "choice",
-          "choices": ["Grass", "Root", "Mushroom", "Tuber"]
+          "choices": [
+            "Grass",
+            "Root",
+            "Mushroom",
+            "Tuber"
+          ]
         }
       },
       {
-        "min_max": [41, 70],
+        "min_max": [
+          41,
+          70
+        ],
         "value": {
           "type": "choice",
-          "choices": ["Vine", "Shrub", "Flower"]
+          "choices": [
+            "Vine",
+            "Shrub",
+            "Flower"
+          ]
         }
       },
       {
-        "min_max": [71, 90],
+        "min_max": [
+          71,
+          90
+        ],
         "value": "Tree"
       },
       {
-        "min_max": [91, 100],
+        "min_max": [
+          91,
+          100
+        ],
         "value": {
           "type": "choice",
-          "choices": ["Carnivore", "Sapient", "Herbivore", "Omnivore"]
+          "choices": [
+            "Carnivore",
+            "Sapient",
+            "Herbivore",
+            "Omnivore"
+          ]
         }
       }
     ]
   },
   "active_components": [
     {
-      "name": ["Root", []],
+      "name": {
+        "type": "RandomChoice",
+        "choices": [
+          "Root",
+          "Stalk, Trunk",
+          "Leaf, Thorn",
+          "Fruit, flower"
+        ]
+      },
       "property": {
-        "domain": {
-          "type": [],
-          "potency": []
+        "type": {
+          "type": "RandomRollwithChoice",
+          "sides": 100,
+          "results": [
+            {
+              "min_max": [
+                1,
+                30
+              ],
+              "value": {
+                "type": "RandomChoice",
+                "choices": [
+                  "Mental",
+                  "Life",
+                  "Disease",
+                  "Wound",
+                  "Status",
+                  "Death"
+                ]
+              }
+            },
+            {
+              "min_max": [
+                31,
+                60
+              ],
+              "value": {
+                "type": "RandomChoice",
+                "choices": [
+                  "Mental",
+                  "Life",
+                  "Disease",
+                  "Wound",
+                  "Status",
+                  "Death"
+                ]
+              }
+            },
+            {
+              "min_max": [
+                61,
+                100
+              ],
+              "value": {
+                "type": "RandomChoice",
+                "choices": [
+                  "Fragrant",
+                  "Culinary",
+                  "Crafting",
+                  "Artistic",
+                  "Enhancing",
+                  "Exotic"
+                ]
+              }
+            }
+          ]
+        },
+        "potency": {
+          "type": "RandomRoll",
+          "sides": 100,
+          "results": [
+            {
+              "min_max": [
+                1,
+                40
+              ],
+              "value": "Mild"
+            },
+            {
+              "min_max": [
+                41,
+                75
+              ],
+              "value": "Moderate"
+            },
+            {
+              "min_max": [
+                76,
+                90
+              ],
+              "value": "Severe"
+            },
+            {
+              "min_max": [
+                91,
+                100
+              ],
+              "value": "Extreme"
+            }
+          ]
         }
       },
       "quality": []

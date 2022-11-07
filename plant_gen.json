@@ -1,0 +1,46 @@
+{
+  "type": "plant",
+  "name": {
+    "type": "RandomRollwithChoice",
+    "sides": 100,
+    "results": [
+      {
+        "result": [1, 40],
+        "value": {
+          "type": "choice",
+          "choices": ["Grass", "Root", "Mushroom", "Tuber"]
+        }
+      },
+      {
+        "result": [41, 70],
+        "value": {
+          "type": "choice",
+          "choices": ["Vine", "Shrub", "Flower"]
+        }
+      },
+      {
+        "result": [71, 90],
+        "value": "Tree"
+      },
+      {
+        "result": [91, 100],
+        "value": {
+          "type": "choice",
+          "choices": ["Carnivore", "Sapient", "Herbivore", "Omnivore"]
+        }
+      }
+    ]
+  },
+  "active_components": [
+    {
+      "name": ["Root", []],
+      "property": {
+        "domain": {
+          "type": [],
+          "potency": []
+        }
+      },
+      "quality": []
+    }
+  ]
+}

@@ -48,10 +48,38 @@
         "value": {
           "type": "RandomChoice",
           "choices": [
-            "Carnivore",
-            "Sapient",
-            "Herbivore",
-            "Omnivore"
+            "Carnivore, Tree",
+            "Carnivore, Vine",
+            "Carnivore, Grass",
+            "Carnivore, Mushroom",
+            "Carnivore, Root",
+            "Carnivore, Tuber",
+            "Carnivore, Shrub",
+            "Carnivore, Flower",
+            "Sapient, Tree",
+            "Sapient, Vine",
+            "Sapient, Grass",
+            "Sapient, Mushroom",
+            "Sapient, Root",
+            "Sapient, Tuber",
+            "Sapient, Shrub",
+            "Sapient, Flower",
+            "Herbivore, Tree",
+            "Herbivore, Vine",
+            "Herbivore, Grass",
+            "Herbivore, Mushroom",
+            "Herbivore, Root",
+            "Herbivore, Tuber",
+            "Herbivore, Shrub",
+            "Herbivore, Flower",
+            "Omnivore, Tree",
+            "Omnivore, Vine",
+            "Omnivore, Grass",
+            "Omnivore, Mushroom",
+            "Omnivore, Root",
+            "Omnivore, Tuber",
+            "Omnivore, Shrub",
+            "Omnivore, Flower"
           ]
         }
       }

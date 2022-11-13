@@ -155,7 +155,7 @@
             }
           ]
         },
-        "potency": {
+        "potency (dosage)": {
           "type": "RandomRoll",
           "sides": 100,
           "results": [
@@ -164,7 +164,7 @@
                 1,
                 40
               ],
-              "value": "Mild"
+              "value": "Low"
             },
             {
               "min_max": [
@@ -176,13 +176,13 @@
             {
               "min_max": [
                 76,
-                90
+                95
               ],
-              "value": "Severe"
+              "value": "High"
             },
             {
               "min_max": [
-                91,
+                96,
                 100
               ],
               "value": "Extreme"
@@ -190,7 +190,7 @@
           ]
         }
       },
-      "quality": {
+      "quality (strength)": {
         "type": "RandomRoll",
         "sides": 100,
         "results": [
@@ -199,7 +199,7 @@
               1,
               40
             ],
-            "value": "Low"
+            "value": "Poor"
           },
           {
             "min_max": [
@@ -211,13 +211,13 @@
           {
             "min_max": [
               72,
-              90
+              95
             ],
             "value": "Superior"
           },
           {
             "min_max": [
-              91,
+              96,
               100
             ],
             "value": "Epic"

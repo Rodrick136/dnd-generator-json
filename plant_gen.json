@@ -155,7 +155,7 @@
             }
           ]
         },
-        "potency (dosage)": {
+        "potency": {
           "type": "RandomRoll",
           "sides": 100,
           "results": [
@@ -190,7 +190,7 @@
           ]
         }
       },
-      "quality (strength)": {
+      "quality": {
         "type": "RandomRoll",
         "sides": 100,
         "results": [
